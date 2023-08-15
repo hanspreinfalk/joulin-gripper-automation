@@ -1,0 +1,41 @@
+Text Replacement Script
+
+This script performs text replacements in a specified file, following a predefined dictionary of replacements. Additionally, it extracts a specific value from the file contents to customize one of the replacements.
+
+Purpose
+
+The primary purpose of this script is to automate the process of replacing specific text patterns in a file with predefined values. This can be particularly useful when you need to update or modify code snippets in a file while keeping the rest of the content intact.
+
+Features
+
+    Replaces designated text patterns in a target file using a predefined replacement dictionary.
+    Extracts an actual grip value from the file contents and utilizes it to customize a replacement.
+    Handles potential errors, such as file not found or general exceptions.
+
+How to Use
+
+    Place the script in the same directory as the file you want to perform text replacements on (on_robot_script.txt).
+
+    Open the script in a text editor or integrated development environment (IDE) of your choice (VS Code).
+
+    Customize the following variables in the script according to your needs:
+        file_path: Specify the path to the target file.
+        replacement_dict: Define the replacement dictionary with the text patterns and replacement values.
+
+    Run the script by executing it using Python:
+
+    python run.py
+
+    The script will perform the text replacements based on the replacement dictionary, and a success message will be displayed upon completion.
+
+Note
+
+    The script assumes that the target file is in a readable format (e.g., text-based file) and that the text patterns specified in the replacement dictionary exist in the file.
+    In the replacement dictionary, the placeholder <grip_value> is used to denote a value extracted from the file. The script will automatically replace this placeholder with the actual grip value from the file contents.
+
+Error Handling
+
+The script incorporates error handling to address the following scenarios:
+
+    If the specified file does not exist (FileNotFoundError).
+    If an unexpected error occurs during text replacement or file operations.
